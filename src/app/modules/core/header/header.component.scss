@@ -1,0 +1,10 @@
+@import "src/styles/variables";
+
+.header .navbar {
+    height: $header-height;
+
+    .page-logo {
+        height: $base-size * 1.9;
+        width: auto;
+    }
+}
