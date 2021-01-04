@@ -1,9 +1,15 @@
 @import "src/styles/variables";
 
-.header .navbar {
+.header {
     height: $header-height;
+    display: flex;
+    align-items: center;
 
-    .page-logo {
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .logo-image {
         height: $base-size * 1.9;
         width: auto;
     }

@@ -1,0 +1,33 @@
+@import "src/styles/variables";
+
+.section-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $base-size * 4;
+
+    .title {
+        font-size: $base-size * 2;
+        color: $text-color;
+        line-height: $base-size * 2.6;
+        margin-bottom: 0;
+
+        &.inverse {
+            color: $text-color-inverse;
+        }
+    }
+
+    .subtitle {
+        @extend %light-font;
+        font-size: $base-size;
+        line-height: $base-size * 1.6;
+        opacity: 0.6;
+        color: $text-color;
+        margin-bottom: 0;
+        text-align: center;
+
+        &.inverse {
+            color: $text-color-inverse;
+        }
+    }
+}
