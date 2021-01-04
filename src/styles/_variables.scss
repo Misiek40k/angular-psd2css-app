@@ -1,0 +1,28 @@
+@import "mixins";
+
+//colors
+
+$primary-color: #215398;
+$primary-color-light: #28A9E0;
+$secondary-color: #FF3859;
+
+$text-color: #2D3236;
+$text-color-light: #808080;
+$text-color-inverse: #fff;
+
+//sizes
+
+$base-size: 1rem * 1.25;
+$header-height: $base-size * 4.2;
+
+//fonts
+
+%light-font {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+%regular-font {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
