@@ -3,3 +3,18 @@
 .section {
     background: $background-color;
 }
+
+.about-title {
+    color: $text-color;
+    font-size: $base-size * 1.5;
+    line-height: $base-size * 1.4;
+    margin-bottom: $base-size * 1.5;
+    text-align: center;
+}
+
+.content-wrapper {
+    margin: 0 $base-size * 2 ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

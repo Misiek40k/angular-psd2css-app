@@ -9,5 +9,29 @@
                 </app-section-title>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="about-title">
+                    Heading
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="content-wrapper">
+                    <app-content-box [title]="'Heading'" [text]="'Lorem ipsum dolor sit amet.'"
+                                     [imageData]="imageData">
+                    </app-content-box>
+                    <app-content-box [title]="'Heading'" [text]="'Lorem ipsum dolor sit amet, consect\n'+
+'etur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus.'"
+                                     >
+                    </app-content-box>
+                    <app-content-box [title]="'Heading'" [text]="'Lorem ipsum dolor sit amet, consect\n'+
+'etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet'"
+                                     >
+                    </app-content-box>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

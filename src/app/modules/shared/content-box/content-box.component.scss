@@ -1,0 +1,24 @@
+@import "src/styles/variables";
+
+.content-box {
+    padding: $base-size * 1.75 $base-size * 1.25;
+    width: $base-size * 16.5;
+    background: $text-color-inverse;
+    height: $base-size * 11.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+
+    .title {
+        color: $text-color;
+        font-size: $base-size;
+        line-height: $base-size * 1.4;
+        margin-bottom: $base-size * 0.65;
+    }
+
+    .text {
+        text-align: center;
+        line-height: $base-size * 1.25;
+    }
+}
