@@ -8,4 +8,8 @@ body {
 
 .section {
     padding: $base-size * 3 0;
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: $base-size * 2.5;
+    }
 }

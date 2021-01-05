@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 import { HeaderComponent } from './header/header.component';
 
@@ -11,7 +12,8 @@ import { HeaderComponent } from './header/header.component';
     ],
     imports: [
         SharedModule,
-        NgbModule
+        NgbModule,
+        NgxPageScrollCoreModule
     ]
 })
 export class CoreModule {}

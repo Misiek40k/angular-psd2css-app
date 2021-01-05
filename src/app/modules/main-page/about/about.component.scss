@@ -13,8 +13,22 @@
 }
 
 .content-wrapper {
-    margin: 0 $base-size * 2 ;
+    margin: 0 $base-size * 1.5;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include media-breakpoint-down(lg) {
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+        align-items: stretch;
+    }
 }

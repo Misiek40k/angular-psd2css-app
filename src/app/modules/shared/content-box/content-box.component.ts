@@ -15,6 +15,7 @@ export class ContentBoxComponent implements OnInit {
 
     @Input() title: string;
     @Input() text: string;
+    @Input() style: string;
     @Input() imageData: ImageData;
 
     constructor() { }
