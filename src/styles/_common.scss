@@ -1,0 +1,15 @@
+@import "variables";
+
+body {
+    @extend %regular-font;
+    font-size: $base-size * 0.75;
+    color: $text-color-light;
+}
+
+.section {
+    padding: $base-size * 3 0;
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: $base-size * 2.5;
+    }
+}

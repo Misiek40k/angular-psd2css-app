@@ -1,0 +1,37 @@
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col px-md-0">
+                <app-section-title
+                    [title]="'Heading'"
+                    [subtitle]="'Lorem ipsum dolor sit amet, consect etur adipiscing elit.'"
+                    [isFontColorInverse]="false">
+                </app-section-title>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col px-md-0">
+                <h3 class="about-title">
+                    Heading
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col px-md-0">
+                <div class="content-wrapper">
+                    <app-content-box [title]="'Heading'" [text]="'Lorem ipsum dolor sit amet.'"
+                                     [imageData]="imageData">
+                    </app-content-box>
+                    <app-content-box [title]="'Heading'" [text]="'Lorem ipsum dolor sit amet, consect\n'+
+'etur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus.'"
+                                     >
+                    </app-content-box>
+                    <app-content-box [title]="'Ultra Mega Super Long Heading'" [text]="'Lorem ipsum dolor sit amet, consect\n'+
+'etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet'"
+                                     >
+                    </app-content-box>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

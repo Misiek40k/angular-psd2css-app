@@ -1,0 +1,48 @@
+@import "src/styles/variables";
+
+.section {
+    background: $primary-color;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    justify-content: space-between;
+
+    .slider-button-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: $base-size;
+
+        &.left {
+            @include media-breakpoint-down(lg) {
+                margin-right: $base-size * 0.5;
+            }
+        }
+
+        &.right {
+            @include media-breakpoint-down(lg) {
+                margin-left: $base-size;
+            }
+        }
+
+        .button {
+            background: none;
+            border: none;
+            padding: 0;
+
+            .arrow-icon {
+                &.left {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    .slider {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+}
