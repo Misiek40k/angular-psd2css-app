@@ -13,26 +13,24 @@
             <div class="col px-md-0">
                 <div class="slider-wrapper">
                     <div class="slider-button-wrapper left">
-                        <button class="button">
+                        <button class="button" #scrollButtonLeft (click)="scrollSlider(ScrollDirection.LEFT)">
                             <img src="assets/images/arrow.png" srcset="assets/images/arrow.png 1x, assets/images/arrow@2x.png 2x"
                                  alt="Arrow Left" class="arrow-icon left">
                         </button>
                     </div>
-                    <div class="slider">
+                    <div class="slider" #scrollContainer>
                         <app-content-box [title]="'Heading'" [text]="'Lorem ipsum dolor sit amet.'"
-                                         [imageData]="imageData" [style]="'hero'">
+                                         [imageData]="imageData" [isSliderBoxItem]="true" id="scrollItem-1">
                         </app-content-box>
-                        <app-content-box [title]="'Heading'" [text]="'Lorem ipsum dolor sit amet, consect\n'+
-'etur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus.'" [style]="'hero'"
-                        >
+                        <app-content-box [title]="'Heading'" [text]="'Lorem ipsum dolor sit amet, consect etur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus.'"
+                                         [isSliderBoxItem]="true" id="scrollItem-2">
                         </app-content-box>
-                        <app-content-box [title]="'Ultra Mega Super Long Heading'" [text]="'Lorem ipsum dolor sit amet, consect\n'+
-'etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet'" [style]="'hero'"
-                        >
+                        <app-content-box [title]="'Ultra Mega Super Long Heading'" [text]="'Lorem ipsum dolor sit amet, consect etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet'"
+                                         [isSliderBoxItem]="true" id="scrollItem-3">
                         </app-content-box>
                     </div>
                     <div class="slider-button-wrapper right">
-                        <button class="button">
+                        <button class="button" #scrollButtonRight (click)="scrollSlider(ScrollDirection.RIGHT)">
                             <img src="assets/images/arrow.png" srcset="assets/images/arrow.png 1x, assets/images/arrow@2x.png 2x"
                                  alt="Arrow Left" class="arrow-icon right">
                         </button>
