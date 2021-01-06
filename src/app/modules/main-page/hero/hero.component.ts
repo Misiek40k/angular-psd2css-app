@@ -35,8 +35,6 @@ export class HeroComponent implements OnInit {
 
     ngOnInit(): void {}
 
-
-
     scrollSlider(direction: ScrollDirection): void {
         switch (direction) {
             case ScrollDirection.LEFT:
